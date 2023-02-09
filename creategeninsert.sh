@@ -1,9 +1,9 @@
-cp ./runscriptfile.sh ./geninsertdbc.sh
+cp /opt/IBM/SMP/maximo/tools/maximo/internal/runscriptfile.sh /opt/IBM/SMP/maximo/tools/maximo/internal/geninsertdbc.sh
 cat <<< '
 #!/bin/sh
 
 # -t Table Name eg. -tAUTOSCRIPT
-# -w Where Clause eg. -w"AUTOSCRIPT = 'TEST'"
+# -w Where Clause eg. -w"AUTOSCRIPT = "
 # -f File Name                      
 
 # Reset arguments just in case you ran the script earlier.
@@ -156,4 +156,4 @@ pathToScript=`dirname %0`
 
 ../java/jre/bin/java -Xmx5G -classpath .:./classes:$MAXIMO_CLASSPATH psdi.tools.GenInsertDbc $arg1 $arg2 $arg3 $arg4 $arg5 $arg6 $arg7 $arg8 $arg9 $arga $argb $argc $argd $arge $argf $argg $argh $argi $argj $argk
 
-exit $?' > geninsertdbc.sh
+exit $?' > /opt/IBM/SMP/maximo/tools/maximo/internal/geninsertdbc.sh

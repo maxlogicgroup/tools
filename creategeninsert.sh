@@ -6,7 +6,7 @@ cat <<< '
 # -w Where Clause eg. -w"AUTOSCRIPT = "
 # -f File Name                      
 
-# Reset arguments just in case you ran the script earlier.
+# Reset arguments just in case you ran the script earlier. Test
 arg1=""
 arg2=""
 arg3=""
